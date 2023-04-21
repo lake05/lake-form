@@ -34,6 +34,7 @@ export default defineComponent({
       type: Object as PropType<Schema>,
       required: true,
     },
+    // eslint-disable-next-line vue/require-prop-types
     value: {
       required: true,
     },
@@ -119,7 +120,7 @@ export default defineComponent({
     expose(exposeContext)
 
     return () => {
-      const { schema, value } = props
+      const { schema, value, uiSchema } = props
 
       return (
         <SchemaItem
@@ -128,7 +129,7 @@ export default defineComponent({
           rootSchema={schema}
           value={value}
           onChange={handleChange}
-          // uiSchema={uiSchema || {}}
+          uiSchema={uiSchema || {}}
         />
       )
     }

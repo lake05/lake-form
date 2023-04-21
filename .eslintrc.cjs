@@ -23,5 +23,6 @@ module.exports = {
   plugins: ['@typescript-eslint', 'vue', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
+    'vue/one-component-per-file': 'off',
   },
 }

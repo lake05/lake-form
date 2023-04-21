@@ -72,10 +72,10 @@ export const FieldPropsDefine = {
     type: Object as PropType<ErrorSchema>,
     required: true,
   },
-  // uiSchema: {
-  //   type: Object as PropType<UISchema>,
-  //   required: true,
-  // },
+  uiSchema: {
+    type: Object as PropType<UISchema>,
+    required: true,
+  },
 } as const
 
 export type CustomValidate = (data: any, errors: any) => void
