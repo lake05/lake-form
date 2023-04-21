@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  setup() {
+  setup(props, ctx) {
     const number = 12
     return () => (
       <div id="component" className="border-y-indigo-50">
